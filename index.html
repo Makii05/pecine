@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartmani Pećine</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Fontovi-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!--Ikone-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--JavS-->
+    <script src="javaScript.js"></script>
+    <!--Ikona kartice-->
+    <link rel="icon" type="image/svg+xml" href="slike/4-cropped.svg">
+
+</head>
+
+
+<body>
+    <!--Navigacija-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <!-- Logo s lijeve strane -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="slike/4-cropped.svg" alt="Logo" width="150" class="d-inline-block align-middle me-2">
+            </a>
+
+            <!-- Toggler za mobilne uređaje -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="ri-menu-line"></i></span>
+            </button>
+
+            <!-- Navigacijski linkovi i gumb -->
+            <div class="collapse navbar-collapse p-3" id="navbarContent">
+                <ul class="navbar-nav mx-auto  text-center mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active text-white" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active text-white" href="#thirdSection">Contact</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active text-white" href="galerija.html">Gallery</a>
+                    </li>
+                </ul>
+                <a href="rezervacija.html" class="btn d-block btn-brand  contactButton px-3 py-2 rounded-4 text-white">
+                    Rezervirajte sada
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero sekcija-->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h1 class="fw-semibold display-1 text-white mb-2">Apartmani Pecine</h1>
+                    <h5 class="text-white mb-5">Dobrodosli na mjesto gdje je relaksacija i odmor na prvom mjestu</h5>
+                    <a href="#" class="btn btn-brand custom-btn text-white me-2 ">Get Started</a>
+                    <a href="#" class="btn btn-light ms-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sekcija jedan ABOUT-->
+    <section id="about" class="section-padding ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">O nama</h1>
+                        <div class="line"></div>
+                        <p>Dobrodosli u apartmane Pecine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 ">
+                    <img src="slike/kreveti_1.jpg" alt="Slika apartmana" class="slikaAbout rounded-1">
+                </div>
+                <div class="col-lg-5 mt-5 mt-md-0">
+                    <h1>Informacije</h1>
+                    <p class="mt-3 mb-4">Naši apartmani nude savršen spoj udobnosti i moderne opreme. Smješteni na
+                        odličnoj lokaciji, idealni su za opuštanje.
+                    </p>
+                    <div class="d-flex pt-4 mb-3">
+                        <div class="iconbox me-4">
+                            <i class="ri-hotel-bed-line"></i>
+                        </div>
+                        <div>
+                            <h5>Udoban smještaj</h5>
+                            <p>Sve što vam treba za ugodan boravak.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="iconbox me-4">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <div>
+                            <h5>Odlična lokacija</h5>
+                            <p>Blizina plaže, restorana i atrakcija.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="iconbox me-4">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <div>
+                            <h5>Uvijek dostupni</h5>
+                            <p>Tu smo za sva vaša pitanja i pomoć.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--3 sekcija-->
+    <section id="thirdSection" class=" d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Istraži Rijeku</h1>
+                        <div class="line"></div>
+                        <p>Mjesta u blizini za posjetit</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div class="card text-center mb-3 firstCard">
+                        <div class="card-body">
+                            <div class="exploreIcon mb-3">
+                                <i class="ri-restaurant-line"></i>
+                            </div>
+                            <h5 class="card-title">Okusi Rijeke</h5>
+                            <p class="card-text mb-4">Istražite konobe i restorane te uživajte u svježim morskim
+                                plodovima i vinima.</p>
+                            <a href="#" class="btn btn-brand px-4 text-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div class="card text-center mb-3">
+                        <div class="card-body">
+                            <div class="exploreIcon mb-3">
+                                <i class="ri-bank-line"></i>
+                            </div>
+                            <h5 class="card-title">Povijest i kultura</h5>
+                            <p class="card-text mb-4">RIstražite Trsatsku gradinu, Korzo i Palaču guvernera te otkrijte
+                                bogatu povijest Rijeke.
+                            </p>
+                            <a href="#" class="btn btn-brand px-4 text-white roundedButton">See More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center">
+                    <div class="card text-center mb-3">
+                        <div class="card-body">
+                            <div class="exploreIcon mb-3">
+                                <i class="ri-flower-line"></i>
+                            </div>
+                            <h5 class="card-title">Bijeg u prirodu</h5>
+                            <p class="card-text mb-4">Prošećite kanjonom Rječine, istražite Učku i Platak ili se
+                                opustite na plažama.
+                            </p>
+                            <a href="#" class="btn btn-brand px-4 text-white">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Galerija Slika</h1>
+                        <div class="line"></div>
+                        <p>Istražite naše apartmane kroz fotografije i doživite udobnost koju nudimo!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 gallery">
+
+                    <img src="slike/kreveti.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                    <img src="slike/kreveti_1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Wintry Mountain Landscape" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 gallery">
+                    <img src="slike/kuhinja.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Mountains in the Clouds" />
+
+                    <img src="slike/kupaona.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 gallery">
+                    <img src="slike/soba.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                    <img src="slike/soba_1.jpg" class="w-100 shadow-1-strong rounded mb-4"
+                        alt="Yosemite National Park" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 align-items-center justify-content-center text-center">
+                    <a href="galerija.html"><button class="learn-more pogledajVise">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Vidi Više</span>
+                        </button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Recenzije-->
+    <section id="recenzije" class="section-padding my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Recenzije</h1>
+                        <div class="line"></div>
+                        <p>Što naši posjetitelji kažu o svom iskustvu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 gx-4">
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="review">
+                        <div class="reviw-head p-4 bg-white shadow-lg">
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p>"Odlična usluga i vrlo profesionalan pristup! Svakako bih preporučila svima."
+                            </p>
+                        </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <img class="rounded-circle" src="slike/avatar_1.jpg" alt="">
+                            <div class="ms-3">
+                                <h5>Ana Kovač</h5>
+                                <small>Profesorica</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="review">
+                        <div class="reviw-head p-4 bg-white shadow-lg">
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p>"Kvaliteta rada je iznad mojih očekivanja. Sve preporuke!"
+                            </p>
+                        </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <img class="rounded-circle" src="slike/avatar_1.jpg" alt="">
+                            <div class="ms-3">
+                                <h5>Marko Jurić</h5>
+                                <small>Programer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="review">
+                        <div class="reviw-head p-4 bg-white shadow-lg">
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p>"Vrlo stručno i korisno iskustvo. Definitivno bih ponovno koristila ovu uslugu."
+                            </p>
+                        </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <img class="rounded-circle" src="slike/avatar_1.jpg" alt="">
+                            <div class="ms-3">
+                                <h5>Ivana Horvat</h5>
+                                <small>Liječnica</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="review">
+                        <div class="reviw-head p-4 bg-white shadow-lg">
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p>"Izuzetno ljubazan tim i brza usluga. 5 zvjezdica!"
+                            </p>
+                        </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <img class="rounded-circle" src="slike/avatar_1.jpg" alt="">
+                            <div class="ms-3">
+                                <h5>Luka Babić</h5>
+                                <small>Vozač</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                    <div class="review">
+                        <div class="reviw-head p-4 bg-white shadow-lg">
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p>"Kreativnost i profesionalnost na visokom nivou.
+                            </p>
+                        </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <img class="rounded-circle" src="slike/avatar_1.jpg" alt="">
+                            <div class="ms-3">
+                                <h5>Petra Novak</h5>
+                                <small>Dizajnerica</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 d-none d-lg-block">
+                    <div class="review">
+                        <div class="reviw-head p-4 bg-white shadow-lg">
+                            <div class="text-warning">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                            <p>"Fantastična suradnja i odlični rezultati. Svaka čast!"
+                            </p>
+                        </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <img class="rounded-circle" src="slike/avatar_1.jpg" alt="">
+                            <div class="ms-3">
+                                <h5>Filip Matić</h5>
+                                <small>Poduzetnik</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Kontaktirajte nas-->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Kontaktirajte nas</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white">Tu smo za sva vaša pitanja pošaljite nam poruku i rado ćemo vam pomoći!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white  shadow-lg rounded-2">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Enter first name">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Enter last name">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" rows="5" class="form-control"
+                                placeholder="Enter message"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn btn-brand text-white">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#">APARTMANI PECINE</a>
+                        <div class="line text-white"></div>
+                        <p>Uživajte u luksuznom smještaju uz more. Apartmani Pećine nude savršen spoj udobnosti i
+                            prirode za vaš idealan odmor.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="ri-twitter-x-line"></i></a>
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-pinterest-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">SERVICES</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#">Besplatan WI-FI</a></li>
+                            <li><a href="#">Besplatan Parking</a></li>
+                            <li><a href="#">Pogled na More</a></li>
+                            <li><a href="#">Znamenitosti</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">ABOUT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#contact">Kontakt</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#thirdSection">Znamenitosti</a></li>
+                            <li><a href="rezervacija.html">Rezervacija</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">CONTACT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Setaliste 13 divizije 84</li>
+                            <li>(385) 051 464 56</li>
+                            <li>www.pecine.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between g-4">
+                    <div class="col-auto">
+                        <p class="mb-0">Copyright Maki. All Right Reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed By <a href="#">FRAN</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>
